@@ -450,3 +450,51 @@ section h1 {
   float:right;
   font-weight: bold;
 }
+
+ .max{
+    border: 1px solid black;
+    padding:10px;
+    margin:10px;
+  }
+
+  .min{
+    border: 1px solid black;
+    padding:10px;
+    margin : 10px;
+  }
+
+  .item-min{
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+  .item-max{
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+    font-weight: bold;
+    
+  }
+
+  .set_suhu{
+    border: 1px solid;
+    box-sizing:content-box;
+    padding:10px;
+    margin:10px;
+    position: absolute;
+  }
+
+  .item-suhu{
+    display: flex;
+    padding:10px;
+    justify-content:space-between;
+    font-weight: bold;
+  }
+
+  .submit{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
