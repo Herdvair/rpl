@@ -9,6 +9,7 @@
         <title>Dashboard Page</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     </head>
     <body>
         <div class="sidebar">
@@ -21,16 +22,73 @@
             </ul>
         </div>
         <div class="content">
-            <h1>Hello,User!</h1>
-            <i class="icon">user</i>
-           
-                <div class="container">
-                    <div class="item">Kelembaban Udara</div>
-                    <div class="item">Suhu</div>
-                    <div class="item">Intensitas cahaya</div>
-                  </div>
+            <div class="header">
+                <div class="nav">
+                    <h1>Hello,User!</h1>
+                    <i class="fi fi-rr-user"></i>
                 </div>
-          
+            </div>
+            <div class="content_2">
+                <div class="container">
+                    <div class="sensors">
+                        <div class="sensor">
+                            <div class="status_sensor">
+                                <div class="status_colour_normal"></div>
+                            </div>
+                            <div class="sensor_value">
+                                <div class="value_text">400</div>
+                            </div>
+                            <div class="sensor_name">
+                                <div class="name_text">Intensitas Cahaya</div>
+                            </div>
+                        </div>
+                        <div class="sensor">
+                            <div class="status_sensor">
+                                <div class="status_colour_notnormal"></div>
+                            </div>
+                            <div class="sensor_value">
+                                <div class="value_text">29</div>
+                            </div>
+                            <div class="sensor_name">
+                                <div class="name_text">Suhu (C)</div>
+                            </div>
+                        </div>
+                        <div class="sensor">
+                            <div class="status_sensor">
+                                <div class="status_colour_normal"></div>
+                            </div>
+                            <div class="sensor_value">
+                                <div class="value_text">100</div>
+                            </div>
+                            <div class="sensor_name">
+                                <div class="name_text">Kelembapan (%)</div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="details">
+                            <h3>Plant details</h3>
+                                <img src="https://4.bp.blogspot.com/-mWtVgJA44JU/WtNridrZNtI/AAAAAAAAZIc/k2odXUhOGWIogYwvmzNH_M68D6OyKrVtQCLcBGAs/s1600/data.JPG" style="float:left; width: 60%; height: 60%;">
+                        </div>
+                        <div class="aktuators">
+                            <div class="item-actuator">
+                                <span class="text">Fan</span>
+                                <i class="fa-solid fa-toggle-on"></i>
+                            </div>
+                            <div class="item-actuator">
+                                <span class="text">Heater</span>
+                                <i class="fa-solid fa-toggle-off"></i>
+                            </div>
+                            <div class="item-actuator">
+                                <span class="text">Lamp</span>
+                                <i class="fa-solid fa-toggle-on"></i>
+                            </div>
+                            <div class="item-actuator">
+                                <span class="text">Humidifier</span>
+                                <i class="fa-solid fa-toggle-off"></i>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
