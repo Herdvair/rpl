@@ -1,12 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    outline: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
-    height: 100;
+    min-height: 100;
     background-size: cover;
     background-position:auto;
     background-repeat: no-repeat;
@@ -68,9 +68,9 @@ main {
 .sidebar {
     position: fixed;
     left: 0px;
-    width: 250px;
-    height: 100%;
-    background: #ABC4AA;
+    width: 22vw;
+    min-height: 100vh;
+    background: #DBE4C6;
     transition: all 0.5s ease;
 }
 .sidebar .top {
@@ -215,30 +215,114 @@ section h1 {
       opacity: 0;
     }
   }
- 
-  .container {
+
+  .content {
+    position: absolute;
+    width: 78vw;
+    right: 0;
+    height: 100vh;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 78vw;
+    height: 10vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    width: 60%;
-    height: 80%;
-    margin: 10px;
-   
+    justify-content: center;
+    z-index: 1;
+    background-color: #004369;
+  }
+ 
+  .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content_2 {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+  }
+  .container {
+    width: 95%;
+    min-height: 95%;
+    background-color: #94AF9F;
+    border-radius: 10px;
+  }
+
+  .sensors {
+    width: 100%;
+    height: min-content;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   
-  .item {
-    width: 100px;
-    height: 50px;
+  .sensor {
+    width: 28%;
+    height: 25vh;
+    max-height: 25%;
     background-color: #ccc;
-  
+    border-radius: 10px;
     padding : 20px;
     display: flex;
+    flex-direction: column;
   }
   
-  .content {
-    flex: 1;
-    padding: 20px;
+  .status_sensor {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 20%;
+    width: 100%
+  }
+
+  .status_colour_normal{
+    width: 30px;
+    height: 10px;
+    background-color: #1B9A18;
+    align-items: center;
+  }
+
+  .status_colour_notnormal{
+    width: 30px;
+    height: 10px;
+    background-color: #9A1818;
+    align-items: center;
+  }
+
+  .sensor_value {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 55%;
+  }
+
+  .value_text {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  .sensor_name {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 25%;
+  }
+
+  .name_text {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
   }
   
   .sidebar h2 {
@@ -319,4 +403,24 @@ section h1 {
   .sensors{
     display: flex;
   }
+
+
   
+  .details{
+   
+  }
+  
+  .icon{
+    font-size: 24px;
+		margin-right: 10px;
+		color: #333;
+  }
+
+.item-actuator{
+    display: flex;
+			align-items: center;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 10px
+}
