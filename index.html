@@ -91,4 +91,44 @@
             </div>
         </div>
     </body>
+    <script>
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDpITS4WgjWnMTJzlQAX_qe1WpKcYeuv_I",
+  authDomain: "smart-plant-2b29a.firebaseapp.com",
+  projectId: "smart-plant-2b29a",
+  storageBucket: "smart-plant-2b29a.appspot.com",
+  messagingSenderId: "793690722099",
+  appId: "1:793690722099:web:6907593580e17fd7c6f846",
+  measurementId: "G-X44YWWQYNG"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+const db = getDatabase(app);
+
+
+const lightRef = ref(db, 'sensors/light/value')
+onValue(lightRef,(snapshot) => {
+    const data = snapshot.val();
+    console.log(data);
+})
+
+const tempRef = ref(db, 'sensors/temp/value')
+onValue(tempRef,(snapshot) => {
+    const data = snapshot.val();
+    console.log(data);
+})        
+
+const humRef = ref(db, 'sensors/humidity/value')
+onValue(humRef,(snapshot) => {
+    const data = snapshot.val();
+    console.log(data);
+})
+</script> 
 </html>
