@@ -1,3 +1,3 @@
-# rpl
-Dashboard smart plan
-https://www.figma.com/file/VH0EiHpmiBy9qoabeeCugC/Admin-panel?type=design&node-id=0%3A1&t=OR8MP2axA5p4RS9F-1
+# rpl Kelompok 3 | Gabriel Dylan Valentino (D121201025) | Tri Indah Wahyuningsi (D121201018)
+Dashboard smart greenhouse 
+https://green-house2.web.app/
